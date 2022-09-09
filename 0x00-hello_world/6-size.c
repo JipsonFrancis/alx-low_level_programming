@@ -1,0 +1,21 @@
+#include <stdio.h>
+/**
+ *main - prints text to screen
+ *
+ *Return: 0
+ */
+int main(void)
+{
+	char Char;
+	int Int;
+	long int Long_Int;
+	long long int Long_Long_Int;
+	float Float;
+
+	printf("Size of a char: %zu byte(s)\n", sizeof(Char));
+	printf("Size of a int: %zu byte(s)\n", sizeof(Int));
+	printf("Size of a long int: %zu byte(s)\n", sizeof(Long_Int));
+	printf("Size of a long long int: %zu byte(s)\n", sizeof(Long_Long_Int));
+	printf("Size of a float: %zu bytes\n", sizeof(Float));
+	return (0);
+}
