@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i <= 26; i++)
 	{
-		putchar("%c", alphabet[i]);
+		putchar(alphabet[i]);
 	}
 
 	return (0);
