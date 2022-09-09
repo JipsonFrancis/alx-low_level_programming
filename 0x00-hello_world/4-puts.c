@@ -1,13 +1,11 @@
-#<stdio.h>
+#include <stdio.h>
 /**
- *main - the entry point for the compiler
- *@void: no variable is given 
+ *Display - prints text to screen
  *
- * Return: the function return 0 
+ *Return: 0
  */
- 
-int main (void)
+int Display(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return(0);
+	puts("\"Programming is like building a multilingual puzzle\n");
+	return (0);
 }
