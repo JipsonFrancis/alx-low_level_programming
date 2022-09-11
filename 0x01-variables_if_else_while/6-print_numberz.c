@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
  *main - entry point for programe
  *
@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		putchar((char)i);
+		write(2, i, 2);
 		if (i == 9)
 			putchar('\n');
 	}
