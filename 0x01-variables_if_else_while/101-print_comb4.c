@@ -22,6 +22,7 @@ int main(void)
 				{
 					putchar(Dascii[i]);
 					putchar(Dascii[j]);
+					putchar(Dascii[k]);
 
 					if (!(i == 7 && j == 8 && k == 9))
 					{
