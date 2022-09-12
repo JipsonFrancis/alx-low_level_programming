@@ -9,9 +9,9 @@ int main(void)
 {
 	int i;
 	char a[] = {'a', 'b', 'c', 'd', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-		'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+		'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '\n'};
 
-	for (i = 0; i <= 26; i++)
+	for (i = 0; i < 25; i++)
 	{
 		putchar(a[i]);
 	}
