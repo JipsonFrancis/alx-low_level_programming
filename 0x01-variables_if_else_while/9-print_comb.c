@@ -8,13 +8,16 @@
 int main(void)
 {
 	int i;
-	char decimal[] = {'0','1','2','3','4','5','6','7','8','9'};
+	int Dascii[] = {48,49,50,51,52,53,54,55,56,57};
 	
 	for (i = 0; i < 10; i++)
 	{
-		putchar(decimal[i]);
+		putchar(Dascii[i]);
 		if (i == 9)
+		{
 			putchar('\n');
+			break;
+		}
 		putchar(',');
 	}
 
