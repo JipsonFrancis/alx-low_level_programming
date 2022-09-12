@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 /**
  *main - entry point for programe
  *
@@ -8,10 +8,13 @@
 int main(void)
 {
 	int i;
+	char digit;
 
 	for (i = 0; i < 10; i++)
 	{
-		write(2, i, 2);
+		digit = (char) i;
+
+		putchar(digit);
 		if (i == 9)
 			putchar('\n');
 	}
