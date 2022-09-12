@@ -8,8 +8,8 @@
 int main(void)
 {
 	int i;
-	int Dascii[] = {48,49,50,51,52,53,54,55,56,57};
-	
+	int Dascii[] = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57};
+
 	for (i = 0; i < 10; i++)
 	{
 		putchar(Dascii[i]);
@@ -18,6 +18,7 @@ int main(void)
 			putchar('\n');
 			break;
 		}
+		putchar(' ');
 		putchar(',');
 	}
 
