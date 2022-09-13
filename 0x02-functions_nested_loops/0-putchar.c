@@ -1,13 +1,10 @@
 #include "main.h"
+
 /**
  *
+ * main - this is the entry of the programme
  *
- *main - the entry point for prgramme
- *
- *
- * return: 0
- *
- *
+ * Return: On success 0.
  *
  */
 
