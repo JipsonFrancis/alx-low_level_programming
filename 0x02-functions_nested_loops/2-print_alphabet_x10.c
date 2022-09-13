@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_alphabet - no array but prints alpabets easy
+ * print_alphabet_x10 - no array but prints alpabets easy
  *
  *
- * Return: On success 0.
+ * Return: On success void
  *
  */
 
@@ -11,10 +11,10 @@ void print_alphabet_x10(void)
 {
 	int i;
 	int j;
-	
-	for(int j = 0 ; j <= 10; j++)
+
+	for (j = 0 ; j <= 10; j++)
 	{
-		for(int i = 97 ; i <= 122; i++ )
+		for (i = 97 ; i <= 122; i++)
 		{
 			_putchar(i);
 			if (i == 122)
