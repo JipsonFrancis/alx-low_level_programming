@@ -2,7 +2,8 @@
 
 /**
  *
- * main - this is the entry of the programme
+ * main - programme entry 
+ *
  *
  * Return: On success 0.
  *
