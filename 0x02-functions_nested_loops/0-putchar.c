@@ -1,10 +1,12 @@
-#include <main.h>
+#include "main.h"
 /**
  *
- * print - writes the characters to stdout via _putchar
+ * main - programme entry point.
  *
  * Return: On success 0.
  */
+int main(void);
+
 int print()
 {
 	_putchar(95);
