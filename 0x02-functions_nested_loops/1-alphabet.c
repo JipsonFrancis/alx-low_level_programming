@@ -7,8 +7,15 @@
  *
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	int i;
+
+	for (i = 97; i <= 122; i++)
+	{
+		_putchar(i);
+
+		if (i == 122)
+			_putchar(10);
+	}
 }
