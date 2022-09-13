@@ -1,8 +1,6 @@
 #include "main.h"
-
 /**
- *
- * main - programme entry 
+ * main - programme entry point print _putchar
  *
  *
  * Return: On success 0.
