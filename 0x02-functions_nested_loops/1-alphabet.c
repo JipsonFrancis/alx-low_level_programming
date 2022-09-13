@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - programme entry point print _putchar
+ * print_alphabet - no array but prints alpabets easy
  *
  *
  * Return: On success 0.
