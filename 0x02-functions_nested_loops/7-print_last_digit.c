@@ -12,7 +12,7 @@ int print_last_digit(int n)
 {
 	int rem;
 
-	rem = (n % 10) * 11;
+	rem = (n % 10);
 
 	return (rem);
 }
