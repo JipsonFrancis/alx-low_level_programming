@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * - prints all minutes of time
+ * times_table - prints all minutes of time
  *
  * Return: void
  */
@@ -8,12 +8,15 @@ void times_table(void)
 {
 	int a;
 	int b;
+	int z = 0;
 
-	for (a = 48; a < 58; a++)
+	for (a = 0; a < 10; a++)
 	{
-		for (b = 48; b < 58; b++)
+		for (b = 0; b < 10; b++)
 		{
-			_putchar(a*b);
+			z = a * b;
+
+			_putchar(z + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
