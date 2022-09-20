@@ -1,0 +1,22 @@
+#include "main.h"
+/**
+ * print_rev - prints a string, in reverse, followed by a new line
+ *
+ * @s : pointer to parameter that is passed
+ *
+ * Return : void
+ */
+void print_rev(char *s)
+{
+	int i;
+
+	int a = 0;
+
+	for (i = 0; str[i]; i++)
+		a++;
+
+	for (i = a; i >= 0; i--)
+		_putchar(s[i]);
+
+	_putchar(10);
+}
