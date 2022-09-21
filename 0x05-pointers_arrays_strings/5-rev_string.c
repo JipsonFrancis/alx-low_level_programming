@@ -19,7 +19,7 @@ void rev_string(char *s)
 	{
 		j = s[i];
 		s[i] = s[a - i - 1];
-		s[n - i - 1] = j;
+		s[a - i - 1] = j;
 	}
 
 	for (i = 0; s[i]; i++)
