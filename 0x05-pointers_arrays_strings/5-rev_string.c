@@ -24,4 +24,6 @@ void rev_string(char *s)
 
 	for (i = 0; s[i]; i++)
 		_putchar(s[i]);
+
+	_putchar(10);
 }
