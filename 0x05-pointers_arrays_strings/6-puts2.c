@@ -13,6 +13,6 @@ void puts2(char *str)
 	for (i = 0; str[i]; i++)
 	{
 		if (i % 2 == 0)
-			_putchar(s[i]);
+			_putchar(str[i]);
 	}
 }
