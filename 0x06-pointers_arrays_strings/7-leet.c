@@ -10,13 +10,19 @@ char *leet(char *str)
 	char letter[] = "aAeEoOtTlL";
 	char replace = "4433007711";
 
-	for (a = 0; str[a] != '\0'; a++)
+	a = 0;
+
+	while (str[a])
 	{
-		for (b = 0; letter[b] != '\0'; b++)
+		b = 0;
+
+		while (letter[b])
 		{
-			if (str[i] == letter[b])
-				str[i] = replace[b];
+			if (str[a] == letter[b])
+				str[a] = replace[b];
+			b++
 		}
+		a++;
 	}
 	return (str);
 }
