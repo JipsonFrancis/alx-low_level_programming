@@ -12,15 +12,15 @@ char *leet(char *str)
 
 	a = 0;
 
-	while (str[a])
+	while (str[a] != '\0')
 	{
 		b = 0;
 
-		while (letter[b])
+		while (letter[b] != '\0')
 		{
 			if (str[a] == letter[b])
 				str[a] = replace[b];
-			b++
+			b++;
 		}
 		a++;
 	}
