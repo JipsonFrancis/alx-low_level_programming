@@ -8,32 +8,31 @@
  */
 char *cap_string(char *s)
 {
-	int i, a;
-	int t;
-	char these[] = ",;.!?(){}\n\t\" ";
+	int i;
 
-	for (i = 0, t = 0; s[i]; i++)
+	i = 0;
+
+	while (s[i] != '\0')
 	{
-		if (s[i] > 96 && s[i] < 123)
-			t = 1;
-		for (a = 0; these[a]; a++)
+		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			if (these[a] == s[i])
-				t = 1;
-		}
-
-		if (t)
-		{
-			if (s[i] > 96 && s[i] < 123)
+			if (i == 0)
 			{
 				s[i] -= 32;
-				t = 0;
 			}
-			else if (s[i] > 64 && s[i] < 91)
-				t = 0;
-			else if (s[i] > 47 && s[i] < 58)
-				t = 0;
+
+			if (s[i - 1] == 32 || s[i - 1] == '\t' ||
+				s[i - 1] == '\n' || s[i - 1] == ',' ||
+				s[i - 1] == ';' || s[i - 1] == '.' ||
+				s[i - 1] == '!' || s[i - 1] == '?' ||
+				s[i - 1] == '"' || s[i - 1] == '(' ||
+				s[i - 1] == ')' || s[i - 1] == '{' ||
+				s[i - 1] == '}')
+			{
+				s[i] -= 32;
+			}
 		}
+		i++;
 	}
 	return (s);
 }
