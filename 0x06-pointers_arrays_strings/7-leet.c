@@ -2,39 +2,21 @@
 /**
  * leet - encode a string to 1337
  * @str: string
- * Return: encoded string `s`
+ * Return: The string is returned once changed to leet.
  */
 char *leet(char *str)
 {
-	int i;
+	int a, b;
+	char letter[] = "aAeEoOtTlL";
+	char replace = "4433007711";
 
-	for (i = 0; str[i]; i++)
+	for (a = 0; str[a]; a++)
 	{
-		while (str[i] == 'a' || str[i] == 'A')
+		for (b = 0; letter[b]; b++)
 		{
-			str[i] = '4';
-		}
-
-		while (str[i] == 'e' || str[i] == 'E')
-		{
-			str[i] = '3';
-		}
-
-		while (str[i] == 'o' || str[i] == 'O')
-		{
-			str[i] = '0';
-		}
-
-		while (str[i] == 't' || str[i] == 'T')
-		{
-			str[i] = '7';
-		}
-
-		while (str[i] == 'l' || str[i] == 'L')
-		{
-			str[i] = '1';
+			if (str[i] == letter[b])
+				str[i] = replace[b];
 		}
 	}
-
 	return (str);
 }
