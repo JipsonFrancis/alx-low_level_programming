@@ -8,7 +8,7 @@ char *leet(char *str)
 {
 	int a, b;
 	char letter[] = "aAeEoOtTlL";
-	char replace = "4433007711";
+	char replace[] = "4433007711";
 
 	a = 0;
 
