@@ -1,40 +1,40 @@
 #include "main.h"
 /**
  * leet - encode a string
- * @s: string
+ * @str: string
  * Return: encoded string
  */
-char *leet(char *s)
+char *leet(char *str)
 {
-	int s;
+	int i;
 
-	for (s = 0; s[i]; s++)
+	for (i = 0; str[i]; i++)
 	{
-		while (s[i] == 'a' || s[i] == 'A')
+		while (str[i] == 'a' || str[i] == 'A')
 		{
-			s[i] = '4';
+			str[i] = '4';
 		}
 
-		while (s[i] == 'e' || s[i] == 'E')
+		while (str[i] == 'e' || str[i] == 'E')
 		{
-			s[i] = '3';
+			str[i] = '3';
 		}
 
-		while (s[i] == 'o' || s[i] == 'O')
+		while (str[i] == 'o' || str[i] == 'O')
 		{
-			s[i] = '0';
+			str[i] = '0';
 		}
 
-		while (s[i] == 't' || s[i] == 'T')
+		while (str[i] == 't' || str[i] == 'T')
 		{
-			s[i] = '7';
+			str[i] = '7';
 		}
 
-		while (s[i] == 'l' || s[i] == 'L')
+		while (str[i] == 'l' || str[i] == 'L')
 		{
-			s[i] = '1';
+			str[i] = '1';
 		}
 	}
 
-	return (s);
+	return (str);
 }
